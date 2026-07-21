@@ -15,7 +15,7 @@
 body{
     padding: 15px;
     background-color: white;
-    padding-bottom: 320px;
+    padding-bottom: 260px;
 }
 #loading{
     width: 100%;
@@ -85,13 +85,13 @@ body{
 }
 #checkingAnswer .fa-circle-xmark{
     color: red;
-    font-size: 60px;
+    font-size: 80px;
     display: none;
     transition: 0.1s;
 }
 #checkingAnswer .fa-circle-check{
     color: green;
-    font-size: 60px;
+    font-size: 80px;
     display: none;
     transition: 0.1s;
 }
@@ -175,7 +175,7 @@ h2{
 h3{
     position: absolute;
     color: royalblue;
-    top: 86px;
+    top: 87px;
     background-color: white;
     left: 40px;
     padding: 5px;

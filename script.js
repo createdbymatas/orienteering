@@ -175,7 +175,7 @@ function enlargeText(){
         document.getElementById("orienteeringText").style.fontSize = "23px";
         document.getElementById("teamText").style.fontSize = "18px";
         document.getElementById("taskText").style.fontSize = "18px";
-        document.getElementById("taskText").style.top = "82px";
+        document.getElementById("taskText").style.top = "83px";
         document.getElementById("givenTaskText").style.fontSize = "18px";
         document.getElementById("taskDescText").style.fontSize = "16px";
         document.getElementById("enterAnswerText").style.fontSize = "15px";
@@ -191,6 +191,7 @@ function enlargeText(){
         document.getElementById("readTaskBtn").style.fontSize = "14px";
         document.getElementById("smallerTextBtn").style.pointerEvents = "all";
         document.getElementById("smallerTextBtn").style.opacity = "1";
+        document.getElementById("body").style.paddingBottom = "220px";
     }
     else if(document.getElementById("textSizeInput").value == "75"){
         document.getElementById("textSizeInput").value = "100";
@@ -203,7 +204,7 @@ function enlargeText(){
         document.getElementById("orienteeringText").style.fontSize = "25px";
         document.getElementById("teamText").style.fontSize = "20px";
         document.getElementById("taskText").style.fontSize = "20px";
-        document.getElementById("taskText").style.top = "86px";
+        document.getElementById("taskText").style.top = "87px";
         document.getElementById("givenTaskText").style.fontSize = "20px";
         document.getElementById("taskDescText").style.fontSize = "18px";
         document.getElementById("enterAnswerText").style.fontSize = "17px";
@@ -219,6 +220,7 @@ function enlargeText(){
         document.getElementById("readTaskBtn").style.fontSize = "16px";
         document.getElementById("smallerTextBtn").style.pointerEvents = "all";
         document.getElementById("smallerTextBtn").style.opacity = "1";
+        document.getElementById("body").style.paddingBottom = "260px";
     }
     else if(document.getElementById("textSizeInput").value == "100"){
         document.getElementById("textSizeInput").value = "125";
@@ -231,7 +233,7 @@ function enlargeText(){
         document.getElementById("orienteeringText").style.fontSize = "27px";
         document.getElementById("teamText").style.fontSize = "22px";
         document.getElementById("taskText").style.fontSize = "22px";
-        document.getElementById("taskText").style.top = "90px";
+        document.getElementById("taskText").style.top = "91px";
         document.getElementById("givenTaskText").style.fontSize = "22px";
         document.getElementById("taskDescText").style.fontSize = "20px";
         document.getElementById("enterAnswerText").style.fontSize = "19px";
@@ -247,6 +249,7 @@ function enlargeText(){
         document.getElementById("readTaskBtn").style.fontSize = "18px";
         document.getElementById("smallerTextBtn").style.pointerEvents = "all";
         document.getElementById("smallerTextBtn").style.opacity = "1";
+        document.getElementById("body").style.paddingBottom = "280px";
     }
     else if(document.getElementById("textSizeInput").value == "125"){
         document.getElementById("textSizeInput").value = "150";
@@ -259,7 +262,7 @@ function enlargeText(){
         document.getElementById("orienteeringText").style.fontSize = "29px";
         document.getElementById("teamText").style.fontSize = "24px";
         document.getElementById("taskText").style.fontSize = "24px";
-        document.getElementById("taskText").style.top = "94px";
+        document.getElementById("taskText").style.top = "95px";
         document.getElementById("givenTaskText").style.fontSize = "24px";
         document.getElementById("taskDescText").style.fontSize = "22px";
         document.getElementById("enterAnswerText").style.fontSize = "21px";
@@ -273,8 +276,38 @@ function enlargeText(){
         document.getElementById("largerTextBtn").style.fontSize = "20px";
         document.getElementById("boldTextBtn").style.fontSize = "20px";
         document.getElementById("readTaskBtn").style.fontSize = "20px";
+        document.getElementById("smallerTextBtn").style.pointerEvents = "all";
+        document.getElementById("smallerTextBtn").style.opacity = "1";
+        document.getElementById("body").style.paddingBottom = "325px";
+    }
+    else if(document.getElementById("textSizeInput").value == "150"){
+        document.getElementById("textSizeInput").value = "175";
+        document.getElementById("checkingText").style.fontSize = "23px";
+        document.getElementById("incorrectText").style.fontSize = "23px";
+        document.getElementById("correctText").style.fontSize = "23px";
+        document.getElementById("yourLetterText").style.fontSize = "29px";
+        document.getElementById("letter").style.fontSize = "56px";
+        document.getElementById("letterInfo").style.fontSize = "21px";
+        document.getElementById("orienteeringText").style.fontSize = "31px";
+        document.getElementById("teamText").style.fontSize = "26px";
+        document.getElementById("taskText").style.fontSize = "26px";
+        document.getElementById("taskText").style.top = "99px";
+        document.getElementById("givenTaskText").style.fontSize = "26px";
+        document.getElementById("taskDescText").style.fontSize = "24px";
+        document.getElementById("enterAnswerText").style.fontSize = "23px";
+        document.getElementById("confirmBtn").style.fontSize = "22px";
+        document.getElementById("info1").style.fontSize = "21px";
+        document.getElementById("info2").style.fontSize = "21px";
+        document.getElementById("accessP").style.fontSize = "24px";
+        document.getElementById("accessWord").style.fontSize = "23px";
+        document.getElementById("accessWord2").style.fontSize = "23px";
+        document.getElementById("smallerTextBtn").style.fontSize = "22px";
+        document.getElementById("largerTextBtn").style.fontSize = "22px";
+        document.getElementById("boldTextBtn").style.fontSize = "22px";
+        document.getElementById("readTaskBtn").style.fontSize = "22px";
         document.getElementById("largerTextBtn").style.pointerEvents = "none";
         document.getElementById("largerTextBtn").style.opacity = "0.5";
+        document.getElementById("body").style.paddingBottom = "340px";
     }
     else{
         
@@ -292,7 +325,7 @@ function decreaseText(){
         document.getElementById("orienteeringText").style.fontSize = "21px";
         document.getElementById("teamText").style.fontSize = "16px";
         document.getElementById("taskText").style.fontSize = "16px";
-        document.getElementById("taskText").style.top = "78px";
+        document.getElementById("taskText").style.top = "79px";
         document.getElementById("givenTaskText").style.fontSize = "16px";
         document.getElementById("taskDescText").style.fontSize = "14px";
         document.getElementById("enterAnswerText").style.fontSize = "13px";
@@ -308,6 +341,7 @@ function decreaseText(){
         document.getElementById("readTaskBtn").style.fontSize = "12px";
         document.getElementById("smallerTextBtn").style.pointerEvents = "none";
         document.getElementById("smallerTextBtn").style.opacity = "0.5";
+        document.getElementById("body").style.paddingBottom = "205px";
     }
     else if(document.getElementById("textSizeInput").value == "100"){
         document.getElementById("textSizeInput").value = "75";
@@ -320,7 +354,7 @@ function decreaseText(){
         document.getElementById("orienteeringText").style.fontSize = "23px";
         document.getElementById("teamText").style.fontSize = "18px";
         document.getElementById("taskText").style.fontSize = "18px";
-        document.getElementById("taskText").style.top = "82px";
+        document.getElementById("taskText").style.top = "83px";
         document.getElementById("givenTaskText").style.fontSize = "18px";
         document.getElementById("taskDescText").style.fontSize = "16px";
         document.getElementById("enterAnswerText").style.fontSize = "15px";
@@ -336,6 +370,7 @@ function decreaseText(){
         document.getElementById("readTaskBtn").style.fontSize = "14px";
         document.getElementById("largerTextBtn").style.pointerEvents = "all";
         document.getElementById("largerTextBtn").style.opacity = "1";
+        document.getElementById("body").style.paddingBottom = "220px";
     }
     else if(document.getElementById("textSizeInput").value == "125"){
         document.getElementById("textSizeInput").value = "100";
@@ -348,7 +383,7 @@ function decreaseText(){
         document.getElementById("orienteeringText").style.fontSize = "25px";
         document.getElementById("teamText").style.fontSize = "20px";
         document.getElementById("taskText").style.fontSize = "20px";
-        document.getElementById("taskText").style.top = "86px";
+        document.getElementById("taskText").style.top = "87px";
         document.getElementById("givenTaskText").style.fontSize = "20px";
         document.getElementById("taskDescText").style.fontSize = "18px";
         document.getElementById("enterAnswerText").style.fontSize = "17px";
@@ -364,6 +399,7 @@ function decreaseText(){
         document.getElementById("readTaskBtn").style.fontSize = "16px";
         document.getElementById("largerTextBtn").style.pointerEvents = "all";
         document.getElementById("largerTextBtn").style.opacity = "1";
+        document.getElementById("body").style.paddingBottom = "260px";
     }
     else if(document.getElementById("textSizeInput").value == "150"){
         document.getElementById("textSizeInput").value = "125";
@@ -376,7 +412,7 @@ function decreaseText(){
         document.getElementById("orienteeringText").style.fontSize = "27px";
         document.getElementById("teamText").style.fontSize = "22px";
         document.getElementById("taskText").style.fontSize = "22px";
-        document.getElementById("taskText").style.top = "90px";
+        document.getElementById("taskText").style.top = "91px";
         document.getElementById("givenTaskText").style.fontSize = "22px";
         document.getElementById("taskDescText").style.fontSize = "20px";
         document.getElementById("enterAnswerText").style.fontSize = "19px";
@@ -392,6 +428,36 @@ function decreaseText(){
         document.getElementById("readTaskBtn").style.fontSize = "18px";
         document.getElementById("largerTextBtn").style.pointerEvents = "all";
         document.getElementById("largerTextBtn").style.opacity = "1";
+        document.getElementById("body").style.paddingBottom = "280px";
+    }
+    else if(document.getElementById("textSizeInput").value == "175"){
+        document.getElementById("textSizeInput").value = "150";
+        document.getElementById("checkingText").style.fontSize = "21px";
+        document.getElementById("incorrectText").style.fontSize = "21px";
+        document.getElementById("correctText").style.fontSize = "21px";
+        document.getElementById("yourLetterText").style.fontSize = "27px";
+        document.getElementById("letter").style.fontSize = "54px";
+        document.getElementById("letterInfo").style.fontSize = "19px";
+        document.getElementById("orienteeringText").style.fontSize = "29px";
+        document.getElementById("teamText").style.fontSize = "24px";
+        document.getElementById("taskText").style.fontSize = "24px";
+        document.getElementById("taskText").style.top = "95px";
+        document.getElementById("givenTaskText").style.fontSize = "24px";
+        document.getElementById("taskDescText").style.fontSize = "22px";
+        document.getElementById("enterAnswerText").style.fontSize = "21px";
+        document.getElementById("confirmBtn").style.fontSize = "20px";
+        document.getElementById("info1").style.fontSize = "19px";
+        document.getElementById("info2").style.fontSize = "19px";
+        document.getElementById("accessP").style.fontSize = "22px";
+        document.getElementById("accessWord").style.fontSize = "21px";
+        document.getElementById("accessWord2").style.fontSize = "21px";
+        document.getElementById("smallerTextBtn").style.fontSize = "20px";
+        document.getElementById("largerTextBtn").style.fontSize = "20px";
+        document.getElementById("boldTextBtn").style.fontSize = "20px";
+        document.getElementById("readTaskBtn").style.fontSize = "20px";
+        document.getElementById("largerTextBtn").style.pointerEvents = "all";
+        document.getElementById("largerTextBtn").style.opacity = "1";
+        document.getElementById("body").style.paddingBottom = "325px";
     }
     else{
         
