@@ -15,7 +15,7 @@
 body{
     padding: 15px;
     background-color: white;
-    padding-bottom: 260px;
+    padding-bottom: 295px;
 }
 #loading{
     width: 100%;
@@ -208,6 +208,8 @@ input{
     border-radius: 15px 5px 5px 15px;
     width: 68%;
     cursor: text;
+    background-color: white;
+    color: black;
 }
 input:focus{
     outline: none;
@@ -231,8 +233,9 @@ input:focus{
 h6{
     font-size: 15px;
     margin-top: 5px;
+    color: black;
 }
-.accessibility{
+#accessibility{
     position: fixed;
     bottom: 15px;
     left: 2.5%;
@@ -254,12 +257,14 @@ h6{
 #accessWord{
     font-size: 17px;
     margin-top: 10px;
+    color: black;
 }
 #accessWord2{
     font-size: 17px;
     margin-top: 10px;
+    color: black;
 }
-.accessibility button{
+#accessibility button{
     height: auto;
     font-size: 16px;
     color: black;
@@ -276,6 +281,6 @@ h6{
     margin-bottom: 2px;
     transition: 0.2s opacity;
 }
-.accessibility button:active{
+#accessibility button:active{
     opacity: 0.5;
 }

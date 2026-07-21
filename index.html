@@ -44,11 +44,13 @@
     </div>
     <h6 id="info2"><i class="fa-solid fa-circle-info"></i> Įvedę teisingą atsakymą gausite raidę, iš kurios (kartu su kitomis) reikės sudėti žodį.</h6>
 
-    <div class="accessibility">
+    <div id="accessibility">
+        <input id="darkModeInput" type="hidden" style="display: none;" value="0">
         <input id="textSizeInput" type="hidden" style="display: none;" value="100">
         <input id="boldTextInput" type="hidden" style="display: none;" value="0">
         <p id="accessP"><i class="fa-solid fa-universal-access"></i> Prieinamumas:</p>
         <p id="accessWord"><i class="fa-regular fa-eye"></i> Regėjimas:</p>
+        <button ontouchstart id="darkModeBtn" onclick="darkMode()"><i class="fa-regular fa-moon"></i> Įjungti tamsų režimą</button>
         <button ontouchstart id="largerTextBtn" onclick="enlargeText()"><i class="fa-solid fa-plus"></i> Didinti šriftą</button>
         <button ontouchstart id="smallerTextBtn" onclick="decreaseText()"><i class="fa-solid fa-minus"></i> Mažinti šriftą</button>
         <button ontouchstart id="boldTextBtn" onclick="boldText()"><i class="fa-solid fa-bold"></i> Įjungti paryškintą šriftą</button>

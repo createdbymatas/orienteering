@@ -50,7 +50,12 @@ function checkAnswer(){
         }, 2000);
         setTimeout(() => {
             document.getElementById("letter").style.backgroundImage = "none";
-            document.getElementById("letter").style.color = "black";
+            if(document.getElementById("darkModeInput").value == "0"){
+                document.getElementById("letter").style.color = "black";
+            }
+            else{
+                document.getElementById("letter").style.color = "white";
+            }
         }, 4000);
     }
     else if(document.getElementById("answer").value == ''){
@@ -109,6 +114,60 @@ document.getElementById("task").onended = function() {
     document.getElementById("readTaskBtn").innerHTML = '<i class="fa-solid fa-bullhorn"></i> Perskaityti užduotį';
 }
 
+function darkMode(){
+    if(document.getElementById("darkModeInput").value == "0"){
+        document.getElementById("darkModeInput").value = "1";
+        document.getElementById("darkModeBtn").innerHTML = '<i class="fa-regular fa-moon"></i> Išjungti tamsų režimą';
+        document.getElementById("body").style.backgroundColor = "black";
+        document.getElementById("checkingAnswer").style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+        document.getElementById("letterWindow").style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+        document.getElementById("checkingText").style.color = "white";
+        document.getElementById("incorrectText").style.color = "white";
+        document.getElementById("correctText").style.color = "white";
+        document.getElementById("yourLetterText").style.color = "white";
+        document.getElementById("letterInfo").style.color = "white";
+        document.getElementById("orienteeringText").style.color = "white";
+        document.getElementById("teamText").style.color = "white";
+        document.getElementById("taskText").style.backgroundColor = "black";
+        document.getElementById("givenTaskText").style.color = "white";
+        document.getElementById("taskDescText").style.color = "white";
+        document.getElementById("enterAnswerText").style.color = "white";
+        document.getElementById("answer").style.backgroundColor = "black";
+        document.getElementById("answer").style.color = "white";
+        document.getElementById("info1").style.color = "white";
+        document.getElementById("info2").style.color = "white";
+        document.getElementById("accessibility").style.backgroundColor = "black";
+        document.getElementById("accessP").style.color = "white";
+        document.getElementById("accessWord").style.color = "white";
+        document.getElementById("accessWord2").style.color = "white";
+    }
+    else{
+        document.getElementById("darkModeInput").value = "0";
+        document.getElementById("darkModeBtn").innerHTML = '<i class="fa-regular fa-moon"></i> Įjungti tamsų režimą';
+        document.getElementById("body").style.backgroundColor = "white";
+        document.getElementById("checkingAnswer").style.backgroundColor = "rgba(255, 255, 255, 0.6)";
+        document.getElementById("letterWindow").style.backgroundColor = "rgba(255, 255, 255, 0.6)";
+        document.getElementById("checkingText").style.color = "black";
+        document.getElementById("incorrectText").style.color = "black";
+        document.getElementById("correctText").style.color = "black";
+        document.getElementById("yourLetterText").style.color = "black";
+        document.getElementById("letterInfo").style.color = "black";
+        document.getElementById("orienteeringText").style.color = "black";
+        document.getElementById("teamText").style.color = "black";
+        document.getElementById("taskText").style.backgroundColor = "white";
+        document.getElementById("givenTaskText").style.color = "black";
+        document.getElementById("taskDescText").style.color = "black";
+        document.getElementById("enterAnswerText").style.color = "black";
+        document.getElementById("answer").style.backgroundColor = "white";
+        document.getElementById("answer").style.color = "black";
+        document.getElementById("info1").style.color = "black";
+        document.getElementById("info2").style.color = "black";
+        document.getElementById("accessibility").style.backgroundColor = "white";
+        document.getElementById("accessP").style.color = "black";
+        document.getElementById("accessWord").style.color = "black";
+        document.getElementById("accessWord2").style.color = "black";
+    }
+}
 function boldText(){
     if(document.getElementById("boldTextInput").value == "0"){
         document.getElementById("boldTextInput").value = "1";
@@ -131,6 +190,7 @@ function boldText(){
         document.getElementById("accessP").style.fontWeight = "600";
         document.getElementById("accessWord").style.fontWeight = "600";
         document.getElementById("accessWord2").style.fontWeight = "600";
+        document.getElementById("darkModeBtn").style.fontWeight = "600";
         document.getElementById("smallerTextBtn").style.fontWeight = "600";
         document.getElementById("largerTextBtn").style.fontWeight = "600";
         document.getElementById("boldTextBtn").style.fontWeight = "600";
@@ -157,6 +217,7 @@ function boldText(){
         document.getElementById("accessP").style.fontWeight = "400";
         document.getElementById("accessWord").style.fontWeight = "400";
         document.getElementById("accessWord2").style.fontWeight = "400";
+        document.getElementById("darkModeBtn").style.fontWeight = "400";
         document.getElementById("smallerTextBtn").style.fontWeight = "400";
         document.getElementById("largerTextBtn").style.fontWeight = "400";
         document.getElementById("boldTextBtn").style.fontWeight = "400";
@@ -185,13 +246,14 @@ function enlargeText(){
         document.getElementById("accessP").style.fontSize = "16px";
         document.getElementById("accessWord").style.fontSize = "15px";
         document.getElementById("accessWord2").style.fontSize = "15px";
+        document.getElementById("darkModeBtn").style.fontSize = "14px";
         document.getElementById("smallerTextBtn").style.fontSize = "14px";
         document.getElementById("largerTextBtn").style.fontSize = "14px";
         document.getElementById("boldTextBtn").style.fontSize = "14px";
         document.getElementById("readTaskBtn").style.fontSize = "14px";
         document.getElementById("smallerTextBtn").style.pointerEvents = "all";
         document.getElementById("smallerTextBtn").style.opacity = "1";
-        document.getElementById("body").style.paddingBottom = "220px";
+        document.getElementById("body").style.paddingBottom = "250px";
     }
     else if(document.getElementById("textSizeInput").value == "75"){
         document.getElementById("textSizeInput").value = "100";
@@ -214,13 +276,14 @@ function enlargeText(){
         document.getElementById("accessP").style.fontSize = "18px";
         document.getElementById("accessWord").style.fontSize = "17px";
         document.getElementById("accessWord2").style.fontSize = "17px";
+        document.getElementById("darkModeBtn").style.fontSize = "16px";
         document.getElementById("smallerTextBtn").style.fontSize = "16px";
         document.getElementById("largerTextBtn").style.fontSize = "16px";
         document.getElementById("boldTextBtn").style.fontSize = "16px";
         document.getElementById("readTaskBtn").style.fontSize = "16px";
         document.getElementById("smallerTextBtn").style.pointerEvents = "all";
         document.getElementById("smallerTextBtn").style.opacity = "1";
-        document.getElementById("body").style.paddingBottom = "260px";
+        document.getElementById("body").style.paddingBottom = "295px";
     }
     else if(document.getElementById("textSizeInput").value == "100"){
         document.getElementById("textSizeInput").value = "125";
@@ -243,13 +306,14 @@ function enlargeText(){
         document.getElementById("accessP").style.fontSize = "20px";
         document.getElementById("accessWord").style.fontSize = "19px";
         document.getElementById("accessWord2").style.fontSize = "19px";
+        document.getElementById("darkModeBtn").style.fontSize = "18px";
         document.getElementById("smallerTextBtn").style.fontSize = "18px";
         document.getElementById("largerTextBtn").style.fontSize = "18px";
         document.getElementById("boldTextBtn").style.fontSize = "18px";
         document.getElementById("readTaskBtn").style.fontSize = "18px";
         document.getElementById("smallerTextBtn").style.pointerEvents = "all";
         document.getElementById("smallerTextBtn").style.opacity = "1";
-        document.getElementById("body").style.paddingBottom = "280px";
+        document.getElementById("body").style.paddingBottom = "315px";
     }
     else if(document.getElementById("textSizeInput").value == "125"){
         document.getElementById("textSizeInput").value = "150";
@@ -272,13 +336,14 @@ function enlargeText(){
         document.getElementById("accessP").style.fontSize = "22px";
         document.getElementById("accessWord").style.fontSize = "21px";
         document.getElementById("accessWord2").style.fontSize = "21px";
+        document.getElementById("darkModeBtn").style.fontSize = "20px";
         document.getElementById("smallerTextBtn").style.fontSize = "20px";
         document.getElementById("largerTextBtn").style.fontSize = "20px";
         document.getElementById("boldTextBtn").style.fontSize = "20px";
         document.getElementById("readTaskBtn").style.fontSize = "20px";
         document.getElementById("smallerTextBtn").style.pointerEvents = "all";
         document.getElementById("smallerTextBtn").style.opacity = "1";
-        document.getElementById("body").style.paddingBottom = "325px";
+        document.getElementById("body").style.paddingBottom = "360px";
     }
     else if(document.getElementById("textSizeInput").value == "150"){
         document.getElementById("textSizeInput").value = "175";
@@ -301,13 +366,14 @@ function enlargeText(){
         document.getElementById("accessP").style.fontSize = "24px";
         document.getElementById("accessWord").style.fontSize = "23px";
         document.getElementById("accessWord2").style.fontSize = "23px";
+        document.getElementById("darkModeBtn").style.fontSize = "22px";
         document.getElementById("smallerTextBtn").style.fontSize = "22px";
         document.getElementById("largerTextBtn").style.fontSize = "22px";
         document.getElementById("boldTextBtn").style.fontSize = "22px";
         document.getElementById("readTaskBtn").style.fontSize = "22px";
         document.getElementById("largerTextBtn").style.pointerEvents = "none";
         document.getElementById("largerTextBtn").style.opacity = "0.5";
-        document.getElementById("body").style.paddingBottom = "340px";
+        document.getElementById("body").style.paddingBottom = "380px";
     }
     else{
         
@@ -335,13 +401,14 @@ function decreaseText(){
         document.getElementById("accessP").style.fontSize = "14px";
         document.getElementById("accessWord").style.fontSize = "13px";
         document.getElementById("accessWord2").style.fontSize = "13px";
+        document.getElementById("darkModeBtn").style.fontSize = "12px";
         document.getElementById("smallerTextBtn").style.fontSize = "12px";
         document.getElementById("largerTextBtn").style.fontSize = "12px";
         document.getElementById("boldTextBtn").style.fontSize = "12px";
         document.getElementById("readTaskBtn").style.fontSize = "12px";
         document.getElementById("smallerTextBtn").style.pointerEvents = "none";
         document.getElementById("smallerTextBtn").style.opacity = "0.5";
-        document.getElementById("body").style.paddingBottom = "205px";
+        document.getElementById("body").style.paddingBottom = "235px";
     }
     else if(document.getElementById("textSizeInput").value == "100"){
         document.getElementById("textSizeInput").value = "75";
@@ -364,13 +431,14 @@ function decreaseText(){
         document.getElementById("accessP").style.fontSize = "16px";
         document.getElementById("accessWord").style.fontSize = "15px";
         document.getElementById("accessWord2").style.fontSize = "15px";
+        document.getElementById("darkModeBtn").style.fontSize = "14px";
         document.getElementById("smallerTextBtn").style.fontSize = "14px";
         document.getElementById("largerTextBtn").style.fontSize = "14px";
         document.getElementById("boldTextBtn").style.fontSize = "14px";
         document.getElementById("readTaskBtn").style.fontSize = "14px";
         document.getElementById("largerTextBtn").style.pointerEvents = "all";
         document.getElementById("largerTextBtn").style.opacity = "1";
-        document.getElementById("body").style.paddingBottom = "220px";
+        document.getElementById("body").style.paddingBottom = "250px";
     }
     else if(document.getElementById("textSizeInput").value == "125"){
         document.getElementById("textSizeInput").value = "100";
@@ -393,13 +461,14 @@ function decreaseText(){
         document.getElementById("accessP").style.fontSize = "18px";
         document.getElementById("accessWord").style.fontSize = "17px";
         document.getElementById("accessWord2").style.fontSize = "17px";
+        document.getElementById("darkModeBtn").style.fontSize = "16px";
         document.getElementById("smallerTextBtn").style.fontSize = "16px";
         document.getElementById("largerTextBtn").style.fontSize = "16px";
         document.getElementById("boldTextBtn").style.fontSize = "16px";
         document.getElementById("readTaskBtn").style.fontSize = "16px";
         document.getElementById("largerTextBtn").style.pointerEvents = "all";
         document.getElementById("largerTextBtn").style.opacity = "1";
-        document.getElementById("body").style.paddingBottom = "260px";
+        document.getElementById("body").style.paddingBottom = "295px";
     }
     else if(document.getElementById("textSizeInput").value == "150"){
         document.getElementById("textSizeInput").value = "125";
@@ -422,13 +491,14 @@ function decreaseText(){
         document.getElementById("accessP").style.fontSize = "20px";
         document.getElementById("accessWord").style.fontSize = "19px";
         document.getElementById("accessWord2").style.fontSize = "19px";
+        document.getElementById("darkModeBtn").style.fontSize = "18px";
         document.getElementById("smallerTextBtn").style.fontSize = "18px";
         document.getElementById("largerTextBtn").style.fontSize = "18px";
         document.getElementById("boldTextBtn").style.fontSize = "18px";
         document.getElementById("readTaskBtn").style.fontSize = "18px";
         document.getElementById("largerTextBtn").style.pointerEvents = "all";
         document.getElementById("largerTextBtn").style.opacity = "1";
-        document.getElementById("body").style.paddingBottom = "280px";
+        document.getElementById("body").style.paddingBottom = "315px";
     }
     else if(document.getElementById("textSizeInput").value == "175"){
         document.getElementById("textSizeInput").value = "150";
@@ -451,13 +521,14 @@ function decreaseText(){
         document.getElementById("accessP").style.fontSize = "22px";
         document.getElementById("accessWord").style.fontSize = "21px";
         document.getElementById("accessWord2").style.fontSize = "21px";
+        document.getElementById("darkModeBtn").style.fontSize = "20px";
         document.getElementById("smallerTextBtn").style.fontSize = "20px";
         document.getElementById("largerTextBtn").style.fontSize = "20px";
         document.getElementById("boldTextBtn").style.fontSize = "20px";
         document.getElementById("readTaskBtn").style.fontSize = "20px";
         document.getElementById("largerTextBtn").style.pointerEvents = "all";
         document.getElementById("largerTextBtn").style.opacity = "1";
-        document.getElementById("body").style.paddingBottom = "325px";
+        document.getElementById("body").style.paddingBottom = "360px";
     }
     else{
         
