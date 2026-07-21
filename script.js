@@ -1,3 +1,23 @@
+// išjungti right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+// išjungti f12, ctrl+shift+i, ctrl+shift+j, ctrl+u (inspect tool)
+function ctrlShiftKey(e, keyCode) {
+    return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+document.onkeydown = (e) => {
+if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+){
+    return false; 
+}
+};
+
 function pageLoaded(){
     setTimeout(() => {
         document.getElementById("loading").style.opacity = "0";
