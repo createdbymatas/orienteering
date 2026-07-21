@@ -72,7 +72,6 @@ function checkAnswer(){
             document.getElementById("incorrectI").style.display = "block";
             document.getElementById("checkingText").style.display = "none";
             document.getElementById("incorrectText").style.display = "block";
-            navigator.virtualKeyboard.hide();
         }, 1000);
         setTimeout(() => {
             document.getElementById("incorrectI").style.marginLeft = "30px";
