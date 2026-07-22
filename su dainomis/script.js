@@ -141,11 +141,13 @@ function readTask(){
     document.getElementById("readTaskBtn").style.opacity = "0.5";
     document.getElementById("readTaskBtn").innerHTML = '<i class="fa-solid fa-bullhorn"></i> Užduotis skaitoma...';
     document.getElementById("task").play();
+    document.getElementById("daina").volume = 0.2;
 }
 document.getElementById("task").onended = function() {
     document.getElementById("readTaskBtn").style.pointerEvents = "all";
     document.getElementById("readTaskBtn").style.opacity = "1";
     document.getElementById("readTaskBtn").innerHTML = '<i class="fa-solid fa-bullhorn"></i> Perskaityti užduotį';
+    document.getElementById("daina").volume = 1;
 }
 
 function darkMode(){
