@@ -1,22 +1,22 @@
-// // išjungti right-click
-// document.addEventListener('contextmenu', (e) => e.preventDefault());
+// išjungti right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-// // išjungti f12, ctrl+shift+i, ctrl+shift+j, ctrl+u (inspect tool)
-// function ctrlShiftKey(e, keyCode) {
-//     return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-// }
+// išjungti f12, ctrl+shift+i, ctrl+shift+j, ctrl+u (inspect tool)
+function ctrlShiftKey(e, keyCode) {
+    return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
 
-// document.onkeydown = (e) => {
-// if (
-//     event.keyCode === 123 ||
-//     ctrlShiftKey(e, 'I') ||
-//     ctrlShiftKey(e, 'J') ||
-//     ctrlShiftKey(e, 'C') ||
-//     (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-// ){
-//     return false; 
-// }
-// };
+document.onkeydown = (e) => {
+if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+){
+    return false; 
+}
+};
 
 function pageLoaded(){
     setTimeout(() => {
@@ -46,7 +46,14 @@ document.getElementById("answer").addEventListener("keypress", function(event) {
 });
 
 function checkAnswer(){
-    if(document.getElementById("answer").value == '40' || document.getElementById("answer").value == 'keturiasdešimt' || document.getElementById("answer").value == 'Keturiasdešimt' || document.getElementById("answer").value == 'keturiasdesimt' || document.getElementById("answer").value == 'Keturiasdesimt' || document.getElementById("answer").value == 'keturesdešimt' || document.getElementById("answer").value == 'Keturesdešimt' || document.getElementById("answer").value == 'keturesdesimt' || document.getElementById("answer").value == 'Keturesdesimt' || document.getElementById("answer").value == 'keturias dešimt' || document.getElementById("answer").value == 'Keturias dešimt' || document.getElementById("answer").value == 'keturias desimt' || document.getElementById("answer").value == 'Keturias desimt' || document.getElementById("answer").value == 'ketures dešimt' || document.getElementById("answer").value == 'Ketures dešimt' || document.getElementById("answer").value == 'ketures desimt' || document.getElementById("answer").value == 'Ketures desimt' || document.getElementById("answer").value == 'keturisdešimt' || document.getElementById("answer").value == 'Keturisdešimt' || document.getElementById("answer").value == 'keturisdesimt' || document.getElementById("answer").value == 'Keturisdesimt' || document.getElementById("answer").value == 'keturis dešimt' || document.getElementById("answer").value == 'Keturis dešimt' || document.getElementById("answer").value == 'keturis desimt' || document.getElementById("answer").value == 'Keturis desimt'){
+    if(document.getElementById("answer").value.includes('40') == true || document.getElementById("answer").value.includes('eturiasdešim') == true || document.getElementById("answer").value.includes('eturiasdesim') == true || document.getElementById("answer").value.includes('eturias dešim') == true || document.getElementById("answer").value.includes('eturias desim') == true || document.getElementById("answer").value.includes('eturesdešim') == true || document.getElementById("answer").value.includes('eturesdesim') == true || document.getElementById("answer").value.includes('etures dešim') == true || document.getElementById("answer").value.includes('etures desim') == true || document.getElementById("answer").value.includes('eturisdešim') == true || document.getElementById("answer").value.includes('eturisdesim') == true || document.getElementById("answer").value.includes('eturis dešim') == true || document.getElementById("answer").value.includes('eturis desim') == true){
+        document.getElementById("daina").pause();
+        document.getElementById("playBtnText").innerHTML = "Leisti";
+        document.getElementById("playBtnIcon").classList.remove("fa-pause");
+        document.getElementById("playBtnIcon").classList.add("fa-play");
+        document.getElementById("soundtrack").style.width = "200px";
+        document.getElementById("soundtrack").style.marginLeft = "-100px";
+        
         document.getElementById("checkingAnswer").style.display = "flex";
         setTimeout(() => {
             document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";
@@ -82,6 +89,13 @@ function checkAnswer(){
 
     }
     else{
+        document.getElementById("daina").pause();
+        document.getElementById("playBtnText").innerHTML = "Leisti";
+        document.getElementById("playBtnIcon").classList.remove("fa-pause");
+        document.getElementById("playBtnIcon").classList.add("fa-play");
+        document.getElementById("soundtrack").style.width = "200px";
+        document.getElementById("soundtrack").style.marginLeft = "-100px";
+        
         document.getElementById("checkingAnswer").style.display = "flex";
         setTimeout(() => {
             document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";
