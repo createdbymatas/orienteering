@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientacinės varžybos · 2 komanda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta property="og:image" content="https://raw.githubusercontent.com/createdbymatas/orienteering/main/resources/thumbnail.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="971">
+    <meta property="og:image:height" content="971">
+    <meta property="og:title" content="Orientacinės varžybos">
+    <meta property="og:description" content="Created by Matas">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/createdbymatas/orienteering/main/resources/thumbnail.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" onload="pageLoaded()"> <!-- 8 -->
+    <audio src="audio/task.mp3" id="task"></audio>
+
+    <div id="loading">
+        <div id="loader"></div>
+        <span>Luktelėkite, įkeliama užduotis ...</span>
+        <p id="creatorText">Programa sukurta Mato Kasparavičiaus · Paskelbta sistemoje „GitHub“ · 2026</p>
+    </div>
+    <div id="checkingAnswer">
+        <div id="checkLoader"></div>
+        <i id="incorrectI" class="fa-regular fa-circle-xmark"></i>
+        <i id="correctI" class="fa-regular fa-circle-check"></i>
+        <span id="checkingText">Luktelėkite, tikrinamas atsakymas ...</span>
+        <span id="incorrectText" style="display: none;">Neteisingai, bandykite dar kartą</span>
+        <span id="correctText" style="display: none;">Teisingai !</span>
+    </div>
+    <div id="letterWindow">
+        <p id="yourLetterText">Jūsų raidė:</p>
+        <span id="letter">I</span>
+        <p id="letterInfo"><i class="fa-solid fa-circle-info"></i> Užsirašykite šią raidę savo lapelyje, o surinkę visas raides sudėliokite žodį ir atneškite jį patikrinimui.</p>
+    </div>
+
+    <h1 id="orienteeringText"><i class="fa-regular fa-compass"></i> Orientacinės varžybos</h1>
+    <h2 id="teamText">2 komanda</h2>
+    <div class="task">
+        <h3 id="taskText">Užduotis:</h3>
+        <h4 id="givenTaskText">Atsakykite į klausimą:</h4>
+        <p id="taskDescText">Vienas kiaušinis verda 5 minutes. Kiek minučių virs 5 kiaušiniai?</p>
+        <h5 id="enterAnswerText">Įveskite atsakymą:</h5>
+        <input id="answer" type="text" placeholder="rašyti čia..." oninput="checkIfNotEmpty()">
+        <button id="confirmBtn" ontouchstart onclick="checkAnswer()">Patvirtinti</button>
+        <h6 id="info1"><i class="fa-solid fa-circle-exclamation"></i> Rašykite taisyklingai, kad atsakymas būtų įskaitytas.</h6>
+    </div>
+    <h6 id="info2"><i class="fa-solid fa-circle-info"></i> Įvedę teisingą atsakymą gausite raidę, iš kurios (kartu su kitomis) reikės sudėti žodį.</h6>
+
+    <div id="accessibility">
+        <input id="darkModeInput" type="hidden" style="display: none;" value="0">
+        <input id="textSizeInput" type="hidden" style="display: none;" value="100">
+        <input id="boldTextInput" type="hidden" style="display: none;" value="0">
+        <p id="accessP"><i class="fa-solid fa-universal-access"></i> Prieinamumas:</p>
+        <p id="accessWord"><i class="fa-regular fa-eye"></i> Regėjimas:</p>
+        <button ontouchstart id="darkModeBtn" onclick="darkMode()"><i class="fa-regular fa-moon"></i> Įjungti tamsų režimą</button>
+        <button ontouchstart id="largerTextBtn" onclick="enlargeText()"><i class="fa-solid fa-plus"></i> Didinti šriftą</button>
+        <button ontouchstart id="smallerTextBtn" onclick="decreaseText()"><i class="fa-solid fa-minus"></i> Mažinti šriftą</button>
+        <button ontouchstart id="boldTextBtn" onclick="boldText()"><i class="fa-solid fa-bold"></i> Įjungti paryškintą šriftą</button>
+        <p id="accessWord2"><i class="fa-solid fa-ear-listen"></i> Klausa:</p>
+        <button ontouchstart id="readTaskBtn" onclick="readTask()"><i class="fa-solid fa-bullhorn"></i> Perskaityti užduotį</button>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/a11707644f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
