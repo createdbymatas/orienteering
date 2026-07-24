@@ -52,7 +52,7 @@ document.getElementById("answer").addEventListener("keypress", function(event) {
 });
 
 function checkAnswer(){
-    if(document.getElementById("answer").value.includes('8') == true || document.getElementById("answer").value.includes('štuoni') == true || document.getElementById("answer").value.includes('stuoni') == true){
+    if(document.getElementById("answer").value.includes('sauso') == true || document.getElementById("answer").value.includes('Sauso') == true){
         document.getElementById("checkingAnswer").style.display = "flex";
         setTimeout(() => {
             document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";

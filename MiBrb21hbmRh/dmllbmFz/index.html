@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/createdbymatas/orienteering/main/resources/thumbnail.png">
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="body" onload="pageLoaded()"> <!-- 3 -->
+<body id="body" onload="pageLoaded()"> <!-- 1 -->
     <audio src="audio/task.mp3" id="task"></audio>
 
     <div id="loading">
@@ -43,8 +43,8 @@
     <h2 id="teamText">2 komanda</h2>
     <div class="task">
         <h3 id="taskText">Užduotis:</h3>
-        <h4 id="givenTaskText">Apskaičiuokite:</h4>
-        <p id="taskDescText">Taupyklėje yra 10 monetų po 50 centų ir 15 monetų po 20 centų. Kiek iš viso eurų yra taupyklėje?</p>
+        <h4 id="givenTaskText">Atsakykite į klausimą:</h4>
+        <p id="taskDescText">Kokio akmens vandenyje nėra?</p>
         <h5 id="enterAnswerText">Įveskite atsakymą:</h5>
         <input id="answer" type="text" placeholder="rašyti čia..." oninput="checkIfNotEmpty()">
         <button id="confirmBtn" ontouchstart onclick="checkAnswer()">Patvirtinti</button>

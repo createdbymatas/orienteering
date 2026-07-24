@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/createdbymatas/orienteering/main/resources/thumbnail.png">
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="body" onload="pageLoaded()"> <!-- 1 -->
+<body id="body" onload="pageLoaded()"> <!-- 3 -->
     <audio src="audio/task.mp3" id="task"></audio>
 
     <div id="loading">
@@ -35,7 +35,7 @@
     </div>
     <div id="letterWindow">
         <p id="yourLetterText">Jūsų raidė:</p>
-        <span id="letter">U</span>
+        <span id="letter">S</span>
         <p id="letterInfo"><i class="fa-solid fa-circle-info"></i> Užsirašykite šią raidę savo lapelyje, o surinkę visas raides sudėliokite žodį ir atneškite jį patikrinimui.</p>
     </div>
 
@@ -43,8 +43,8 @@
     <h2 id="teamText">2 komanda</h2>
     <div class="task">
         <h3 id="taskText">Užduotis:</h3>
-        <h4 id="givenTaskText">Įminkite mįslę:</h4>
-        <p id="taskDescText">Išlekia kaip žvirblis, parlekia kaip jautis. Kas?</p>
+        <h4 id="givenTaskText">Apskaičiuokite:</h4>
+        <p id="taskDescText">Taupyklėje yra 10 monetų po 50 centų ir 15 monetų po 20 centų. Kiek iš viso eurų yra taupyklėje?</p>
         <h5 id="enterAnswerText">Įveskite atsakymą:</h5>
         <input id="answer" type="text" placeholder="rašyti čia..." oninput="checkIfNotEmpty()">
         <button id="confirmBtn" ontouchstart onclick="checkAnswer()">Patvirtinti</button>
