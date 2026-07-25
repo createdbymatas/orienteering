@@ -52,7 +52,7 @@ document.getElementById("answer").addEventListener("keypress", function(event) {
 });
 
 function checkAnswer(){
-    if(document.getElementById("answer").value == '5' || document.getElementById("answer").value == 'penkias' || document.getElementById("answer").value == 'Penkias' || document.getElementById("answer").value == 'penkias minutes' || document.getElementById("answer").value == 'Penkias minutes'){
+    if(document.getElementById("answer").value == '5' || document.getElementById("answer").value == '5 minutes' || document.getElementById("answer").value == 'penkias' || document.getElementById("answer").value == 'Penkias' || document.getElementById("answer").value == 'penkias minutes' || document.getElementById("answer").value == 'Penkias minutes'){
         document.getElementById("checkingAnswer").style.display = "flex";
         setTimeout(() => {
             document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";
