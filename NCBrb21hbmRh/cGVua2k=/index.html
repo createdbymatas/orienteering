@@ -69,5 +69,83 @@
     
     <script src="https://kit.fontawesome.com/a11707644f.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script>
+        function checkAnswer(){
+    if(document.getElementById("answer").value.includes('tovėjimo vieta') == true || document.getElementById("answer").value.includes('tovejimo vieta') == true || document.getElementById("answer").value.includes('tovejimas') == true || document.getElementById("answer").value.includes('toveti') == true || document.getElementById("answer").value.includes('arkingas') == true || document.getElementById("answer").value.includes('arkavimas') == true || document.getElementById("answer").value.includes('arkuoti') == true || document.getElementById("answer").value.includes('arkingo vieta') == true || document.getElementById("answer").value.includes('arkavimo vieta') == true){
+        document.getElementById("checkingAnswer").style.display = "flex";
+        setTimeout(() => {
+            document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";
+            document.getElementById("checkingAnswer").style.opacity = "1";
+        }, 10);
+        setTimeout(() => {
+            document.getElementById("checkLoader").style.display = "none";
+            document.getElementById("correctI").style.display = "block";
+            document.getElementById("checkingText").style.display = "none";
+            document.getElementById("correctText").style.display = "block";
+        }, 1000);
+        setTimeout(() => {
+            document.getElementById("checkingAnswer").style.display = "none";
+            document.getElementById("checkLoader").style.animation = "none";
+            document.getElementById("checkingAnswer").style.opacity = "0";
+            document.getElementById("checkLoader").style.display = "block";
+            document.getElementById("correctI").style.display = "none";
+            document.getElementById("checkingText").style.display = "block";
+            document.getElementById("correctText").style.display = "none";
+            document.getElementById("letterWindow").style.display = "flex";
+        }, 2000);
+        setTimeout(() => {
+            document.getElementById("letter").style.backgroundImage = "none";
+            if(document.getElementById("darkModeInput").value == "0"){
+                document.getElementById("letter").style.color = "black";
+            }
+            else{
+                document.getElementById("letter").style.color = "white";
+            }
+        }, 4000);
+    }
+    else if(document.getElementById("answer").value == ''){
+
+    }
+    else{
+        document.getElementById("checkingAnswer").style.display = "flex";
+        setTimeout(() => {
+            document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";
+            document.getElementById("checkingAnswer").style.opacity = "1";
+        }, 10);
+        setTimeout(() => {
+            document.getElementById("checkLoader").style.display = "none";
+            document.getElementById("incorrectI").style.display = "block";
+            document.getElementById("checkingText").style.display = "none";
+            document.getElementById("incorrectText").style.display = "block";
+        }, 1000);
+        setTimeout(() => {
+            document.getElementById("incorrectI").style.marginLeft = "30px";
+        }, 1100);
+        setTimeout(() => {
+            document.getElementById("incorrectI").style.marginLeft = "-30px";
+        }, 1200);
+        setTimeout(() => {
+            document.getElementById("incorrectI").style.marginLeft = "30px";
+        }, 1300);
+        setTimeout(() => {
+            document.getElementById("incorrectI").style.marginLeft = "-30px";
+        }, 1400);
+        setTimeout(() => {
+            document.getElementById("incorrectI").style.marginLeft = "0";
+        }, 1500);
+        setTimeout(() => {
+            document.getElementById("checkingAnswer").style.opacity = "0";
+        }, 3000);
+        setTimeout(() => {
+            document.getElementById("checkLoader").style.animation = "none";
+            document.getElementById("checkingAnswer").style.display = "none";
+            document.getElementById("checkLoader").style.display = "block";
+            document.getElementById("incorrectI").style.display = "none";
+            document.getElementById("checkingText").style.display = "block";
+            document.getElementById("incorrectText").style.display = "none";
+        }, 3200);
+    }
+}
+    </script>
 </body>
 </html>
