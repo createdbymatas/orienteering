@@ -43,8 +43,8 @@
     <h2 id="teamText">5 komanda</h2>
     <div class="task">
         <h3 id="taskText">Užduotis:</h3>
-        <h4 id="givenTaskText">Apskaičiuokite:</h4>
-        <p id="taskDescText">Tomas nusprendė taupyti: pirmą dieną į taupyklę įmetė 1 €, antrą - 2 €, trečią - 3 € ir taip kasdien didino sumą po 1 €. Kiek eurų jis bus sutaupęs po 7 dienų?</p>
+        <h4 id="givenTaskText">Įminkite mįslę:</h4>
+        <p id="taskDescText">Senas senelis sėdi ant stogo ir rūko pypkę. Kas?</p>
         <h5 id="enterAnswerText">Įveskite atsakymą:</h5>
         <input id="answer" type="text" placeholder="rašyti čia..." oninput="checkIfNotEmpty()">
         <button id="confirmBtn" ontouchstart onclick="checkAnswer()">Patvirtinti</button>
@@ -70,7 +70,7 @@
     <script src="script.js"></script>
     <script>
         function checkAnswer(){
-    if(document.getElementById("answer").value.includes('28') == true || document.getElementById("answer").value.includes('videsim') == true && document.getElementById("answer").value.includes('stuoni') == true || document.getElementById("answer").value.includes('videšim') == true && document.getElementById("answer").value.includes('štuoni') == true || document.getElementById("answer").value.includes('videsim') == true && document.getElementById("answer").value.includes('štuoni') == true || document.getElementById("answer").value.includes('videšim') == true && document.getElementById("answer").value.includes('stuoni') == true){
+    if(document.getElementById("answer").value.includes('aminas') == true || document.getElementById("answer").value.includes('ūmtakis') == true || document.getElementById("answer").value.includes('umtakis') == true || document.getElementById("answer").value.includes('ūmtraukis') == true || document.getElementById("answer").value.includes('umtraukis') == true){
         document.getElementById("checkingAnswer").style.display = "flex";
         setTimeout(() => {
             document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";
