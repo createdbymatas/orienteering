@@ -21,12 +21,6 @@ if (
 function pageLoaded(){
     setTimeout(() => {
         document.getElementById("loading").style.opacity = "0";
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            darkMode();
-        }
-        else{
-
-        }
     }, 1000);
     setTimeout(() => {
         document.getElementById("loading").style.display = "none";
@@ -61,6 +55,13 @@ document.getElementById("task").onended = function() {
     document.getElementById("readTaskBtn").style.pointerEvents = "all";
     document.getElementById("readTaskBtn").style.opacity = "1";
     document.getElementById("readTaskBtn").innerHTML = '<i class="fa-solid fa-bullhorn"></i> Perskaityti užduotį';
+}
+
+function accessOpen(){
+    document.getElementById("accessibility").style.right = "2.5%";
+}
+function accessClose(){
+    document.getElementById("accessibility").style.right = "-100%";
 }
 
 function darkMode(){
