@@ -51,6 +51,13 @@ document.getElementById("answer").addEventListener("keypress", function(event) {
   }
 });
 
+function accessOpen(){
+    document.getElementById("accessibility").style.right = "2.5%";
+}
+function accessClose(){
+    document.getElementById("accessibility").style.right = "-100%";
+}
+
 function readTask(){
     document.getElementById("readTaskBtn").style.pointerEvents = "none";
     document.getElementById("readTaskBtn").style.opacity = "0.5";
