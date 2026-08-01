@@ -73,7 +73,7 @@
     <script src="script.js"></script>
     <script>
         function checkAnswer(){
-    if(document.getElementById("answer").value.includes('3') == true || document.getElementById("answer").value.includes('ris') == true || document.getElementById("answer").value.includes('rys') == true){
+    if(document.getElementById("answer").value.includes('3') == true || document.getElementById("answer").value.toLowerCase().includes('tris') == true || document.getElementById("answer").value.toLowerCase().includes('trys') == true){
         document.getElementById("checkingAnswer").style.display = "flex";
         setTimeout(() => {
             document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";

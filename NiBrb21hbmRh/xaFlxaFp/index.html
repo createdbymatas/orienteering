@@ -73,7 +73,7 @@
     <script src="script.js"></script>
     <script>
         function checkAnswer(){
-    if(document.getElementById("answer").value.includes('tsarginis') == true || document.getElementById("answer").value.includes('apildomas') == true || document.getElementById("answer").value.includes('tliekamas') == true || document.getElementById("answer").value.includes('ezervinis') == true || document.getElementById("answer").value.includes('agalbinis') == true){
+    if(document.getElementById("answer").value.toLowerCase().includes('atsarginis') == true || document.getElementById("answer").value.toLowerCase().includes('papildomas') == true || document.getElementById("answer").value.toLowerCase().includes('atliekamas') == true || document.getElementById("answer").value.toLowerCase().includes('rezervinis') == true || document.getElementById("answer").value.toLowerCase().includes('pagalbinis') == true){
         document.getElementById("checkingAnswer").style.display = "flex";
         setTimeout(() => {
             document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";
