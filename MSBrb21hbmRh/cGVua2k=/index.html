@@ -74,7 +74,7 @@
     <script src="script.js"></script>
     <script>
         function checkAnswer(){
-    if(document.getElementById("answer").value.includes('ismas') == true && document.getElementById("answer").value.includes('ratu') == true || document.getElementById("answer").value.includes('iedin') == true && document.getElementById("answer").value.includes('sankry') == true || document.getElementById("answer").value.includes('iedin') == true && document.getElementById("answer").value.includes('sąnkry') == true || document.getElementById("answer").value.includes('iedas') == true){
+    if(document.getElementById("answer").value.toLowerCase().includes('eismas') == true && document.getElementById("answer").value.toLowerCase().includes('ratu') == true || document.getElementById("answer").value.toLowerCase().includes('iedin') == true && document.getElementById("answer").value.toLowerCase().includes('sankry') == true || document.getElementById("answer").value.toLowerCase().includes('iedin') == true && document.getElementById("answer").value.toLowerCase().includes('sąnkry') == true || document.getElementById("answer").value.toLowerCase().includes('iedas') == true){
         document.getElementById("checkingAnswer").style.display = "flex";
         setTimeout(() => {
             document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";
