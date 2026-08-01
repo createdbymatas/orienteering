@@ -82,7 +82,7 @@
     <script src="script.js"></script>
     <script>
         function checkAnswer(){
-    if(document.getElementById("answer").value.includes('39') == true || document.getElementById("answer").value.includes('risdesim') == true && document.getElementById("answer").value.includes('devyni') == true || document.getElementById("answer").value.includes('risdešim') == true && document.getElementById("answer").value.includes('devyni') == true){
+    if(document.getElementById("answer").value.includes('39') == true || document.getElementById("answer").value.toLowerCase().includes('trisdesim') == true && document.getElementById("answer").value.toLowerCase().includes('devyni') == true || document.getElementById("answer").value.toLowerCase().includes('trisdešim') == true && document.getElementById("answer").value.includes('devyni') == true){
         document.getElementById("daina").pause();
         document.getElementById("playBtnText").innerHTML = "Leisti";
         document.getElementById("playBtnIcon").classList.remove("fa-pause");
