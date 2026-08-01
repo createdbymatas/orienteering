@@ -74,7 +74,7 @@
     <script src="script.js"></script>
     <script>
         function checkAnswer(){
-    if(document.getElementById("answer").value.includes('tovėjimo vieta') == true || document.getElementById("answer").value.includes('tovejimo vieta') == true || document.getElementById("answer").value.includes('tovejimas') == true || document.getElementById("answer").value.includes('toveti') == true || document.getElementById("answer").value.includes('arkingas') == true || document.getElementById("answer").value.includes('arkavimas') == true || document.getElementById("answer").value.includes('arkuoti') == true || document.getElementById("answer").value.includes('arkingo vieta') == true || document.getElementById("answer").value.includes('arkavimo vieta') == true){
+    if(document.getElementById("answer").value.toLowerCase().includes('stovėjimo vieta') == true || document.getElementById("answer").value.toLowerCase().includes('stovejimo vieta') == true || document.getElementById("answer").value.toLowerCase().includes('stovejimas') == true || document.getElementById("answer").value.toLowerCase().includes('stoveti') == true || document.getElementById("answer").value.toLowerCase().includes('parkingas') == true || document.getElementById("answer").value.toLowerCase().includes('parkavimas') == true || document.getElementById("answer").value.toLowerCase().includes('parkuoti') == true || document.getElementById("answer").value.toLowerCase().includes('parkingo vieta') == true || document.getElementById("answer").value.toLowerCase().includes('parkavimo vieta') == true){
         document.getElementById("checkingAnswer").style.display = "flex";
         setTimeout(() => {
             document.getElementById("checkLoader").style.animation = "spin 0.8s linear infinite";

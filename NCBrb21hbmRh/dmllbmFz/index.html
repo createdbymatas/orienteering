@@ -82,7 +82,7 @@
     <script src="script.js"></script>
     <script>
         function checkAnswer(){
-    if(document.getElementById("answer").value.includes('3') == true || document.getElementById("answer").value.includes('rys') == true){
+    if(document.getElementById("answer").value.includes('3') == true || document.getElementById("answer").value.toLowerCase().includes('trys') == true){
         document.getElementById("daina").pause();
         document.getElementById("playBtnText").innerHTML = "Leisti";
         document.getElementById("playBtnIcon").classList.remove("fa-pause");
